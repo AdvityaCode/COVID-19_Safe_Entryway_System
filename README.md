@@ -43,3 +43,4 @@ If the engine is off or the wipers are in OFF mode, they return to 0 degrees aft
 | Wipers delay the correct timing for the mode selected. | Pass|  | |
 | Wipers return to 0 degrees when OFF or engine off. | Pass | | |
 
+![modular diagram](https://github.com/user-attachments/assets/3d4035d6-37ca-43dc-8292-aaad0d8bd377)
