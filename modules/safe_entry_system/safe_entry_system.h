@@ -1,11 +1,7 @@
 //=====[#include guards - begin]===============================================
-#ifndef _SERVO_H_
-#define _SERVO_H_
 
-#define DUTY_MIN 0.025 //Duty cycle is pulse_width/period
-#define DUTY_69 0.057 //Move 67 degrees
-#define DUTY_CONTINUOUS 0.075
-#define PERIOD 0.02 //Units of period is seconds
+#ifndef _SAFE_ENTRY_SYSTEM_H_
+#define _SAFE_ENTRY_SYSTEM_H_
 
 //=====[Declaration of public defines]=========================================
 
@@ -13,13 +9,9 @@
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-void wiperHigh();
-void wiperLow();
-void wiperThree();
-void wiperSix();
-void wiperEight();
-void wiperOff();
+void safe_entry_system_init();
+void safe_entry_system_update();
 
 //=====[#include guards - end]=================================================
 
-#endif // _SERVO_H_
+#endif // _SAFE_ENTRY_SYSTEM_H_

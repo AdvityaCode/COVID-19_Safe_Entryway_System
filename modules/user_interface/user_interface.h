@@ -9,7 +9,7 @@
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-void displayHigh();
+void diplayWelcome();
 void displayLow();
 void displayOff();
 void displayInt3();

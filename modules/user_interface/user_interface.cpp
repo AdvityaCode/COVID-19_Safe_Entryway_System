@@ -5,10 +5,10 @@
 #include "display.h"
 
 
-void displayHigh()
+void displayWelcome()
 {
     displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "Mode: HI" );
+    displayStringWrite( "WELCOME TO ALUMNI GYM" );
 }
 
 void displayLow()

@@ -2,13 +2,10 @@
 
 #include "arm_book_lib.h"
 
-#include "automobile_control_system.h"
+#include "safe_entry_system.h"
 
 #include "display.h"
-#include "user_interface.h"
-#include "ignition_subsystem.h"
-#include "servo.h"
-#include "windshield_wiper_subsystem.h"
+#include "dispenser.h"
 
 //=====[Declaration of private defines]========================================
 
@@ -26,16 +23,16 @@
 
 //=====[Implementations of public functions]===================================
 
-void automobile_control_subsystem_Init()
+void safe_entry_system_init()
 {
+    diplayWelcome();
     inputsInit();
     outputsInit();
     displayInit();
 }
 
-void automobile_control_subsystem_update()
+void safe_entry_system_update()
 {
-    engineToggle();
     uartTask();
     ledActivation();
     wiperActivation();

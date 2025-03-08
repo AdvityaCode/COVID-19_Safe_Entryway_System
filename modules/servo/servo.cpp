@@ -44,4 +44,5 @@ void wiperOff(){
     servo.period(PERIOD); // 20ms period
     delay(300);
     servo.write(DUTY_MIN); // 2.5% duty cycle
+
 }
