@@ -1,13 +1,18 @@
 //=====[Libraries]=============================================================
 
-#include "automobile_control_system.h"
+#include "safe_entry_system.h"
+#include "dispenser.h"
+#include "servo.h"
+#include "distance_sensor.h"
+#include "sanitization_proof.h"
 
 //=====[Main function, the program entry point after power on or reset]========
 
-int main()
+int main() 
 {
-    automobile_control_subsystem_Init();
+//    safe_entry_system_init();   
     while (true) {
-        automobile_control_subsystem_update();
+//        dispenser_update();
+        sanitizationProofUpdate();
     }
 }

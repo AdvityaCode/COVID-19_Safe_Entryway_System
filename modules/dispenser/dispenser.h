@@ -11,7 +11,7 @@
 
 void inputsInit();
 void outputsInit();
-void uartTask();
+void dispenser_update();
 
 //=====[#include guards - end]=================================================
 

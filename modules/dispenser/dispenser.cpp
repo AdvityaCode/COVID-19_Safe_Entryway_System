@@ -4,9 +4,12 @@
 #include "arm_book_lib.h"
 
 #include "dispenser.h"
-
+#include "servo.h"
+#include "distance_sensor.h"
 
 //=====[Defines]===============================================================
+
+float handDistance;
 
 //=====[Declaration and initialization of public global objects]===============
 
@@ -16,19 +19,17 @@
 
 //=====[Implementations of public functions]===================================
 
-void inputsInit()
-{
+void inputsInit(){
+    wiperInitialize();
 }
 
 void outputsInit()
 {
 }
 
-
-void uartTask(){
-    }
-
-
+void dispenser_update(){
+    check_and_activate_motor();
+}
 
 
 
