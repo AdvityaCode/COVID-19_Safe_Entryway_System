@@ -22,14 +22,6 @@ DigitalIn mq2(D10);
 
 //=====[Implementations of public functions]===================================
 
-void gasSensorInit()
-{
-}
-
-void gasSensorUpdate()
-{
-}
-
 bool gasSensorRead()
 {
     return mq2;
