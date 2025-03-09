@@ -6,6 +6,9 @@
 
 #include "display.h"
 #include "dispenser.h"
+#include "gate.h"
+#include "sanitization_proof.h"
+#include "distance_sensor.h"
 
 //=====[Declaration of private defines]========================================
 
@@ -25,7 +28,6 @@
 
 void safe_entry_system_init()
 {
-    diplayWelcome();
     inputsInit();
     outputsInit();
     displayInit();
@@ -33,10 +35,9 @@ void safe_entry_system_init()
 
 void safe_entry_system_update()
 {
-    uartTask();
-    ledActivation();
-    wiperActivation();
-    displayMode();
+    dispenser_update();
+    // sanitizationProofUpdate();
+    // gateUpdate();
 }
 
 //=====[Implementations of private functions]==================================
