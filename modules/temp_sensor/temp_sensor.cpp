@@ -23,6 +23,7 @@ char IDstring[100];
 int IDlength;
 
 static float getTempF();
+static void changeDATA();
 
 // Takes a new reading of the temperature if readTemp == 1;
 void temp_sensor_update() { 
@@ -48,15 +49,12 @@ void temp_sensor_update() {
 // Initializes the temp 
 void temp_sensor_init() {
     aux  =   myMLX90614.MLX90614_GetID_Numbers ( &myMLX90614Data );
-    sprintf(IDstring, "ID_0: %d\nID_1: %d\nID_2: %d\nID_3: %d\r\n", myMLX90614Data.ID[0], myMLX90614Data.ID[1], myMLX90614Data.ID[2], myMLX90614Data.ID[3] );
-    IDlength = strlen(IDstring);
-    pc.write(IDstring, IDlength);
 
     newReading.attach( &changeDATA, .1 );
 }
 
 // Allows the temp to be resampled
-void changeDATA ( void )
+static void changeDATA ( void )
 {
     readTemp = 1;
 }
@@ -74,6 +72,6 @@ float getTempAvg() {
 
 // Returns the temperature of the object in Farenheit
 static float getTempF() {
-    aux  =   myMLX90614.MLX90614_ReadObj1     ( &myMLX90614Data );
+    aux  =   myMLX90614.MLX90614_ReadTObj1     ( &myMLX90614Data );
     return (myMLX90614Data.TObj1 * (9.0/5.0)) + 32.0;
 }
