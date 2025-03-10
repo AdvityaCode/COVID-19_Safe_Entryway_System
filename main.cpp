@@ -5,6 +5,7 @@
 #include "servo.h"
 #include "distance_sensor.h"
 #include "sanitization_proof.h"
+#include "gate.h"
 
 //=====[Main function, the program entry point after power on or reset]========
 
@@ -12,7 +13,8 @@ int main()
 {
 //    safe_entry_system_init();   
     while (true) {
-//        dispenser_update();
+        dispenser_update();
         sanitizationProofUpdate();
+        gateUpdate();
     }
 }
