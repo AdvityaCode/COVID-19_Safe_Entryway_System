@@ -11,7 +11,7 @@
 
 int main() 
 {
-//    safe_entry_system_init();   
+    safe_entry_system_init();   
     while (true) {
         dispenser_update();
         sanitizationProofUpdate();
