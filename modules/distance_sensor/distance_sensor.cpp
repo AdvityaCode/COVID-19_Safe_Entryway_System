@@ -7,7 +7,7 @@
 #include <cstdio>
 
 // Define pins
-DigitalOut trigger(PA_7);
+DigitalOut trigger(PA_5);
 DigitalIn echo(PA_6);
 UnbufferedSerial uartUsb(USBTX, USBRX, 115200);
 
