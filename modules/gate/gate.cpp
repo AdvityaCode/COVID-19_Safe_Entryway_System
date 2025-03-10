@@ -6,17 +6,18 @@
 #include "sanitization_proof.h"
 #include "temp_sensor.h"
 
+DigitalOut gatee(LED3);
+
  void gateUpdate(){
-//     if (LED1 == ON){
-//         if (tempSensed >= 90){
-
-//             if (averageTemp() >= 98){
-//                 keep gate closed and display entry denied
-//             }
-
-//             if (averageTemp()) <= 97{
-//                 open gate and display entry granted
-//             }
-//         }
-//     }
+    if (LED2 == ON){
+        if (getTempF() >= 85 && getTempF() <= 99){
+            gatee = ON;
+            // display entry granted
+            //LED2 = OFF;
+        }
+        else if (getTempF() > 99){
+            // display entry denied
+            //LED2 = OFF;
+        }
+    }
  }
