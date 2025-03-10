@@ -48,6 +48,7 @@ void printToMon() {
 
 void check_and_activate_motor() {
     while (measure_distance() > 7.0 && !dispensedLED){
+        printToMon();
         if (measure_distance() < 7.0) {
             wiperSingleMove2();  // Move the motor
             delay(2000);
