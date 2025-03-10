@@ -9,6 +9,7 @@
 #include "gate.h"
 #include "sanitization_proof.h"
 #include "distance_sensor.h"
+#include "servo.h"
 
 //=====[Declaration of private defines]========================================
 
@@ -30,8 +31,8 @@ void safe_entry_system_init()
 {
     inputsInit();
     outputsInit();
-    displayInit();
     gateInit();
+    gateServoClose();
 }
 
 void safe_entry_system_update()
