@@ -6,8 +6,7 @@
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-float sanitizationProofUpdate();
-void printToMon2();
+void sanitizationProofUpdate();
 
 //=====[#include guards - end]=================================================
 
