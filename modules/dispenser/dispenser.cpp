@@ -31,5 +31,3 @@ void dispenser_update(){
     check_and_activate_motor();
 }
 
-
-
