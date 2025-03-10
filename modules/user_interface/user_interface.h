@@ -9,12 +9,12 @@
 
 //=====[Declarations (prototypes) of public functions]=========================
 
-void diplayWelcome();
-void displayLow();
-void displayOff();
-void displayInt3();
-void displayInt6();
-void displayInt8();
+void displayWelcome();
+void displaySantized();
+void displayCheckTemp();
+void entryGranted();
+void entryDeniedTemp();
+void entryDeniedUnsantized();
 
 //=====[#include guards - end]=================================================
 
