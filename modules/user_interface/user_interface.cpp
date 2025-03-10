@@ -7,44 +7,53 @@
 
 void displayWelcome()
 {
-    displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "WELCOME TO ALUMNI GYM" );
+    displayCharPositionWrite ( 1,0 );
+    displayStringWrite( "WELCOME TO GYM" );
+    displayCharPositionWrite ( 1,1 );
+    displayStringWrite( "SANITIZE PLEASE" );
 }
 
-void displayLow()
+void displaySantized()
+{
+    displayCharPositionWrite ( 3,0 );
+    displayStringWrite( "SANITIZED?" );
+    displayCharPositionWrite ( 1,1 );
+    displayStringWrite( "USE GAS SENSOR" );
+
+}
+
+void displayCheckTemp()
+{
+    displayCharPositionWrite ( 3,0 );
+    displayStringWrite( "GOOD  JOB" );
+
+    displayCharPositionWrite ( 0,1 );
+    displayStringWrite( "GET TEMP CHECKED" );
+}
+
+void entryGranted()
 {
     displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "Mode: LO" );
+    displayStringWrite( "YOU ARE HEALTHY" );
 
+    displayCharPositionWrite ( 0,1 );
+    displayStringWrite( "ENTER ALUMNI GYM" );
 }
 
-void displayOff()
+void entryDeniedTemp()
 {
     displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "Mode: OFF" );
+    displayStringWrite( "TEMP  TOO  HIGH" );
 
+    displayCharPositionWrite ( 0,0 );
+    displayStringWrite( "ENTRY DENIED" );
 }
 
-void displayInt3()
+void entryDeniedUnsantized()
 {
     displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "Mode: INT SHORT" );
-}
+    displayStringWrite( "UNSANTIZED" );
 
-void displayInt6()
-{
     displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "Mode: INT MEDIUM" );
+    displayStringWrite( "ENTRY DENIED" );
 }
-
-void displayInt8()
-{
-    displayCharPositionWrite ( 0,0 );
-    displayStringWrite( "Mode: INT LONG" );
-
-}
-
-
-
-
-
