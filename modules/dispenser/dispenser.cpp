@@ -6,6 +6,7 @@
 #include "dispenser.h"
 #include "servo.h"
 #include "distance_sensor.h"
+#include "display.h"
 
 //=====[Defines]===============================================================
 
@@ -21,6 +22,7 @@ float handDistance;
 
 void inputsInit(){
     wiperInitialize();
+    displayInit();
 }
 
 void outputsInit()
