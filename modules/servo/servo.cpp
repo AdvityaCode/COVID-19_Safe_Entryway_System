@@ -38,9 +38,9 @@ void wiperSingleMove2() {
 }
 
 void gateServoOpen() {
-    gateServo.write(DUTY_69);  // Move to 67 degrees
+    gateServo.write(DUTY_MIN);  // Move to 67 degrees
 }
 
 void gateServoClose() {
-    gateServo.write(DUTY_MIN);  // Close Gate
+    gateServo.write(DUTY_69);  // Close Gate
 }
