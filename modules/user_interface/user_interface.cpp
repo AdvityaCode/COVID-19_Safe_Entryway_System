@@ -4,7 +4,7 @@
 #include "user_interface.h"
 #include "display.h"
 
-
+// Writes the welcome message to the LCD display
 void displayWelcome()
 {
     displayCharPositionWrite ( 0,0 );
@@ -13,6 +13,7 @@ void displayWelcome()
     displayStringWrite( "SANITIZE PLEASE" );
 }
 
+// Writes the sanitization prompt to the LCD display
 void displaySantized()
 {
     displayCharPositionWrite ( 0,0 );
@@ -22,6 +23,7 @@ void displaySantized()
 
 }
 
+// Writes the temperature check prompt to the LCD display
 void displayCheckTemp()
 {
     displayCharPositionWrite ( 0,0 );
@@ -31,6 +33,7 @@ void displayCheckTemp()
     displayStringWrite( "GET TEMP CHECKED" );
 }
 
+// Writes the entry granted message to the LCD display
 void entryGranted()
 {
     displayCharPositionWrite ( 0,0 );
@@ -40,6 +43,7 @@ void entryGranted()
     displayStringWrite( "ENTER ALUMNI GYM" );
 }
 
+// Writes the entry denied message to the LCD display
 void entryDeniedTemp()
 {
     displayCharPositionWrite ( 0,0 );
@@ -49,6 +53,7 @@ void entryDeniedTemp()
     displayStringWrite( "ENTRY DENIED    " );
 }
 
+// POSSIBLE DELETE
 void entryDeniedUnsantized()
 {
     displayCharPositionWrite ( 0,0 );
