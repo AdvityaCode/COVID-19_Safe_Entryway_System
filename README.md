@@ -13,3 +13,4 @@ When the user enters the building, they are greeted by a message prompting them 
 ## Summary of Testing Results
 
 ## Modular Diagram of Code
+![ECE-218-FinalModularDiagram](https://github.com/user-attachments/assets/bf007645-f108-45d2-a2cd-0eb31b12ecec)
