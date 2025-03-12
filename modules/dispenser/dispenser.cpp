@@ -10,13 +10,13 @@
 
 //=====[Defines]===============================================================
 
-float handDistance;
 
 //=====[Declaration and initialization of public global objects]===============
 
 
 //=====[Declaration and initialization of public global variables]=============
 
+float handDistance;
 
 //=====[Implementations of public functions]===================================
 
