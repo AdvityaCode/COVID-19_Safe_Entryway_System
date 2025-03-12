@@ -6,7 +6,7 @@
 #include "dispenser.h"
 #include "servo.h"
 #include "distance_sensor.h"
-#include "display.h"
+//#include "display.h"
 
 //=====[Defines]===============================================================
 
@@ -22,7 +22,7 @@ float handDistance;
 
 void inputsInit(){
     servoInit();
-    displayInit();
+    //displayInit();
 }
 
 void outputsInit()
