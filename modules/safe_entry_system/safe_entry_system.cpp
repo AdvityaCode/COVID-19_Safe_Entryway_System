@@ -8,7 +8,7 @@
 #include "dispenser.h"
 #include "gate.h"
 #include "sanitization_proof.h"
-#include "distance_sensor.h"
+//#include "distance_sensor.h"
 //#include "servo.h"
 #include "user_interface.h"
 
