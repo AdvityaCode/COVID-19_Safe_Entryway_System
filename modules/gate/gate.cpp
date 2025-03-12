@@ -8,6 +8,8 @@
 #include "user_interface.h"
 
 #define LDR_THRESHOLD       0.45
+#define LOW_TEMP            90
+#define HIGH_TEMP           99
 
 DigitalOut gatee(LED3);
 UnbufferedSerial gateDebug(USBTX, USBRX, 115200);
@@ -42,16 +44,14 @@ void gateInit() {
         }
 
 
-        if (getTempF() >= 85 && getTempF() <= 99){
+        if (getTempF() >= LOW_TEMP && getTempF() <= HIGH_TEMP){
             gatee = ON;
             entryGranted();
             gateServoOpen();
             gateOpened = true;
-            //LED2 = OFF;
         }
-        else if (getTempF() > 99){
+        else if (getTempF() > HIGH_TEMP){
             entryDeniedTemp();
-            //LED2 = OFF;
         }
 
         /*sprintf(debugString, "LDR: %0.2f\n", LDRSensor.read());
