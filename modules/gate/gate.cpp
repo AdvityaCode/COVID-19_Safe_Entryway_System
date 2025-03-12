@@ -24,7 +24,7 @@ bool gateOpened = false;
 
 void gateInit() {
     temp_sensor_init();
-    //servoInit();
+    gateServoClose();
 }
 
  void gateUpdate(){
