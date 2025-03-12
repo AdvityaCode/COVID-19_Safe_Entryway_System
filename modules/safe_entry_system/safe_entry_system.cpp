@@ -33,8 +33,9 @@ void safe_entry_system_init()
     inputsInit();
     outputsInit();
     gateInit();
+    userInterfaceInit();
     //gateServoClose();
-    displayWelcome();
+    //displayWelcome();
 }
 
 void safe_entry_system_update()
