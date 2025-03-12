@@ -16,6 +16,9 @@ In this section, possible future improvements and additions are expanded on.
 3) The LDR Sensor after the gate could be replaced with a Breakbeam Sensor which uses a laser to see if anyone has passed through it. Because the LDR sensor works perfectly, this addition is simply an alternative.
 
 ## Summary of Testing Results
+![image](https://github.com/user-attachments/assets/9608b552-6800-4cd9-bf98-037f10b0159d)
+![image](https://github.com/user-attachments/assets/d83822d9-f62c-4a0e-87ad-0ed2bea39043)
+![image](https://github.com/user-attachments/assets/e714834c-1a23-4e2e-858f-44f16a891840)
 
 ## Modular Diagram of Code
 ![ECE-218-FinalModularDiagram](https://github.com/user-attachments/assets/bf007645-f108-45d2-a2cd-0eb31b12ecec)
