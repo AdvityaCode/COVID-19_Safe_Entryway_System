@@ -4,7 +4,7 @@
 
 #include "safe_entry_system.h"
 
-#include "display.h"
+//#include "display.h"
 #include "dispenser.h"
 #include "gate.h"
 #include "sanitization_proof.h"
