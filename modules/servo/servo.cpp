@@ -2,7 +2,7 @@
 #include "arm_book_lib.h"
 
 #include "servo.h"
-#include "distance_sensor.h"
+//#include "distance_sensor.h"
 
 PwmOut servo(PF_9); //Here is where we declare the object
 PwmOut servo2(PF_7);
