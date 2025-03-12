@@ -4,6 +4,12 @@
 #include "user_interface.h"
 #include "display.h"
 
+// Initializes the diplay and writes the welcome message
+void userInterfaceInit() {
+    diaplayInit();
+    displayWelcome();
+}
+
 // Writes the welcome message to the LCD display
 void displayWelcome()
 {
