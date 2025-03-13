@@ -22,3 +22,6 @@ In this section, possible future improvements and additions are expanded on.
 
 ## Modular Diagram of Code
 ![ECE-218-FinalModularDiagram](https://github.com/user-attachments/assets/bf007645-f108-45d2-a2cd-0eb31b12ecec)
+- Orange modules are system modules
+- Yellow modules are subsystem modules
+- Green modules are driver modules
