@@ -11,9 +11,9 @@ When the user enters the building, they are greeted by a message prompting them 
 ## Design Alternatives
 In this section, possible future improvements and additions are expanded on.
 
-1) Placing the Distance Sensor on the sanitizer bottle instead of above the bottle wouuld intuitively make more sense for the users who have never used the system previously. Our concern was that if the sanitizer liquid itself fell on the sensor, it would ruin the sensor and we would have to replace it. In future improvements, we can place the sensor on the bottle at a position that is protected from the liquid but is still on the bottle.
+1) Placing the Distance Sensor on the sanitizer bottle instead of above the bottle would intuitively make more sense for the users who have never used the system previously. Our concern was that if the sanitizer liquid itself fell on the sensor, it would ruin the sensor and we would have to replace it. In future improvements, we can place the sensor on the bottle at a position that is protected from the liquid but is still on the bottle.
 2) During the live demonstration of the project, we noticed that the users were interested in knowing their body temperature. A future implementation plan could display the users temperature on the LCD Display, so we offer proof on our decision of acceptance or denial.
-3) The LDR Sensor after the gate could be replaced with a Breakbeam Sensor which uses a laser to see if anyone has passed through it. Because the LDR sensor works perfectly, this addition is simply an alternative.
+3) The LDR Sensor after the gate could be replaced with a Break Beam Sensor which uses a laser to see if anyone has passed through it. Because the LDR sensor works perfectly, this addition is simply an alternative.
 
 ## Summary of Testing Results
 ![image](https://github.com/user-attachments/assets/9608b552-6800-4cd9-bf98-037f10b0159d)
