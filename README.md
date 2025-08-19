@@ -1,4 +1,4 @@
-# Covid-19 Safe Entryway System
+# Covid-19 Safe Entryway System: Embedded Microcontroller (NUCLEO board) Project
 
 Michael Fitzmaurice and Advitya Singh
 
@@ -25,3 +25,4 @@ In this section, possible future improvements and additions are expanded on.
 - Orange modules are system modules
 - Yellow modules are subsystem modules
 - Green modules are driver modules
+
